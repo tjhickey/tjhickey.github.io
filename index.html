@@ -1,14 +1,72 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>HarborCoat Design - WordPress, Web, Logos, and More</title>
+        <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+        <style>
+            html, body {
+                font-family: 'Kanit', sans-serif;
+            }
+            #page-content {
+                position:relative;
+                width: 50vw;
+                margin:0 auto;
+                padding:2rem 0;
+            }
 
+            #logo {
+                width: 20vw;
+            }
+            ul#points {
+                position:absolute;
+                right:0; top:5rem;
+                list-style-type:none;
+                margin:0;
+            }
+            ul#points li {
+                margin:0; padding:0;
+                text-align:right;
+                font-size:1.1rem;
+            }
+            ul#points li.header h1 {
+                display:inline;
+                font-size:1.9rem;
+                font-weight:bold;
+                margin-bottom: 1rem;
+            }
+            ul#points li.contact {
+                margin-top:2rem;
+            }
+
+            a.button {
+                padding:0.2rem 0.4rem;
+                border:1px solid #3B729C;
+                color:#3B729C;
+                text-decoration:none;
+                line-height:1;
+                border-radius:5px;
+                transition-duration: 0.5s;
+            }
+            a.button:hover {
+                background-color: #5EBCC6;
+                color:white;
+            }
         </style>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script-->
         <script>
 
         </script>
     </head>
     <body>
-        <h1>HarborCoat Design</h1>
+        <div id="page-content">
+            <img src="harborcoat-logo.svg" id="logo" />
+            <ul id="points">
+                <li class="header"><h1>HarborCoat Design</h1></li>
+                <li>WordPress Custom Themes</li>
+                <li>WordPress Custom Plugins</li>
+                <li>Logo Design</li>
+                <li class="contact"><a href="mailto: tom@harborcoatdesign.com" target="_blank" class="button">contact</a></li>
+            </ul>
+        </div>
     </body>
 </html>
