@@ -1,0 +1,39 @@
+<DOCTYPE !>
+    <html>
+        <head>
+            <title>Random Number Generator</title>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+                $(window).ready( function() {
+                	var number = Math.floor((Math.random() * 3) + 1);
+                	var name;
+                	switch( number ) {
+                		case 1:
+                			name = 'Go build your House!';
+                			break;
+                        case 2:
+                          name = 'Go build your Snowman!';
+                          break;
+                        case 3:
+                          name = 'Go build your Coffee Cup!';
+                          break;
+
+                    }
+                	$('#number').html(name);
+                });
+            </script>
+            <style>
+                body {
+                    padding-top:30px;
+                }
+                body * {
+                    text-align:center;
+                }
+            </style>
+
+        </head>
+        <body>
+            <h1>Random Minecraft Builds</h1>
+            <div id="number"></div>
+        </body>
+    </html>
